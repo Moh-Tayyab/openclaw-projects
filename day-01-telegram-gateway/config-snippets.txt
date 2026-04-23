@@ -33,12 +33,16 @@ Why: This is the main command to wake up the AI "brain."
 ollama launch openclaw --model minimax-m2.7:cloud
 
 -----------------------------------------
-4. HOW TO CONNECT TELEGRAM
+4. HOW TO CONNECT TELEGRAM OR WHATSAPP
 -----------------------------------------
 Why: After you start the app, it will give you a "Code." Use this 
 command in a NEW terminal window to link your account.
 
-openclaw pairing approve telegram [REPLACE_THIS_WITH_YOUR_CODE]
+# For Telegram:
+openclaw pairing approve telegram [YOUR_CODE_HERE]
 
-(Note: Delete the brackets and put your code there, like: telegram 12345)
+# For WhatsApp:
+openclaw pairing approve whatsapp [YOUR_CODE_HERE]
+
+(Note: Delete the brackets and put your code there, like: whatsapp 12345)
 =========================================
