@@ -1,4 +1,4 @@
-# 🚀 OpenClaw AI Gateway: From Zero to Production-Ready
+# 🚀 OpenClaw Multi-Channel AI Gateway (Telegram + WhatsApp)
 
 > **New to this?** This project helps you set up your own AI Assistant on Telegram using a tool called OpenClaw. If you are in a region where Telegram is blocked, this guide shows you how to fix that and get the AI "brain" connected.
 

@@ -33,7 +33,20 @@ Why: This is the main command to wake up the AI "brain."
 ollama launch openclaw --model minimax-m2.7:cloud
 
 -----------------------------------------
-4. HOW TO CONNECT TELEGRAM OR WHATSAPP
+4. HOW TO ADD WHATSAPP (New!)
+-----------------------------------------
+Why: To use WhatsApp, you need a small tool called 'wacli'.
+
+Step A (Install the tool):
+# (This command downloads and installs the WhatsApp connector)
+curl -sSL https://raw.githubusercontent.com/openclaw/wacli/main/install.sh | bash
+
+Step B (Scan the QR Code):
+# (This will show a QR code in your terminal. Scan it with your phone!)
+wacli login
+
+-----------------------------------------
+5. HOW TO CONNECT TELEGRAM OR WHATSAPP
 -----------------------------------------
 Why: After you start the app, it will give you a "Code." Use this 
 command in a NEW terminal window to link your account.
