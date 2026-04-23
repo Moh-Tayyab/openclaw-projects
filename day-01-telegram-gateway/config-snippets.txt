@@ -1,15 +1,44 @@
-### Network Fix (WSL2 DNS Override)
-# If api.telegram.org is unreachable due to ISP blocks:
-sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
-curl -4 -v https://api.telegram.org
+=========================================
+🚀 OPENCLAW QUICK-FIX CHEAT SHEET
+=========================================
+Use these commands if you run into trouble. 
+Copy and paste them into your terminal one by one.
 
-### Process Management
-# Clear zombie instances if port 18789 is busy:
+-----------------------------------------
+1. IF THE INTERNET IS BLOCKED (Telegram won't connect)
+-----------------------------------------
+Why: Sometimes your internet provider blocks Telegram. This tells your 
+computer to use Google's "address book" to find it.
+
+Step A (Fix the connection):
+sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
+
+Step B (Test if it worked):
+curl -4 -v https://api.telegram.org
+(If you see "Connected", you are good to go!)
+
+-----------------------------------------
+2. IF THE APP IS STUCK (Port 18789 is busy)
+-----------------------------------------
+Why: If you closed OpenClaw but it's still "hidden" in the background, 
+this command completely stops it so you can start fresh.
+
 pkill -f openclaw
 
-### Clean Launch with Cloud Model
+-----------------------------------------
+3. HOW TO START THE AI
+-----------------------------------------
+Why: This is the main command to wake up the AI "brain."
+
 ollama launch openclaw --model minimax-m2.7:cloud
 
-### Telegram Pairing
-# After running 'openclaw gateway', check the logs for the code, then run:
-openclaw pairing approve telegram [YOUR_CODE_HERE]
+-----------------------------------------
+4. HOW TO CONNECT TELEGRAM
+-----------------------------------------
+Why: After you start the app, it will give you a "Code." Use this 
+command in a NEW terminal window to link your account.
+
+openclaw pairing approve telegram [REPLACE_THIS_WITH_YOUR_CODE]
+
+(Note: Delete the brackets and put your code there, like: telegram 12345)
+=========================================
