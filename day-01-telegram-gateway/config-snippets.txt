@@ -1,0 +1,15 @@
+### Network Fix (WSL2 DNS Override)
+# If api.telegram.org is unreachable due to ISP blocks:
+sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
+curl -4 -v https://api.telegram.org
+
+### Process Management
+# Clear zombie instances if port 18789 is busy:
+pkill -f openclaw
+
+### Clean Launch with Cloud Model
+ollama launch openclaw --model minimax-m2.7:cloud
+
+### Telegram Pairing
+# After running 'openclaw gateway', check the logs for the code, then run:
+openclaw pairing approve telegram [YOUR_CODE_HERE]
