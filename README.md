@@ -191,4 +191,4 @@ openclaw skills add mcp-builder
 
 ---
 
-_Made with ❤️ by Muhammad Tayyab | Junior Tayyab (AI Assistant)_
+_Made with ❤️ by Muhammad Tayyab | Junior Tayyab ⚡️ (AI Assistant)_
